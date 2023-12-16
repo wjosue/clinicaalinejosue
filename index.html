@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aline Josué</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+<body>
+<!--HEADER-->
+<header class="py-8 lg:pt-6 lg:pb-14">
+    <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
+        <!-- logo -->
+        <div class="flex justify-center lg:justify-normal">
+            <a href="#">
+                <img src="./assets/img/header/logo.svg" alt="" />
+            </a>
+        </div>
+
+        <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+            <!-- location -->
+            <!--<div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                <i class="ri-map-pin-2-fill text-2xl text-accent"></i>
+                <div class="text-secondary">123 Arling, Miola, NY</div>
+            </div>-->
+            <!-- phone-->
+            <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                <i class="ri-phone-fill text-2xl text-accent"></i>
+                <div class="text-secondary">(35) 98404-2996</div>
+            </div>
+            <!-- btn-->
+            <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0 rounded-full">Agende agora</button>
+
+            <!-- mobile nav -->
+            <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20">
+                <!--nav trigger btn -->
+                <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center
+                items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all">
+                    <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+                </div>
+
+                <!-- logo, list, form -->
+                <div class="px-12 flex flex-col gap-y-12 h-full">
+                    <!-- logo -->
+                    <a href="#">
+                        <img src="assets/img/header/logo.svg" alt="logo" />
+                    </a>
+
+                    <!-- list -->
+                    <ul class="flex flex-col gap-y-5">
+                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Home</a></li>
+                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Profissionais</a></li>
+                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Especialidades</a></li>
+                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Serviços</a></li>
+                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Blog</a></li>
+                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Contato</a></li>
+                    </ul>
+
+                    <!-- form -->
+                    <form class="relative flex gap-x-[10px]">
+                        <label for="mnav-search-input">
+                            <i class="ri-search-line text-2xl text-accent"></i>
+                        </label>
+                        <input type="text" id="mnav-search-input" placeholder="Buscar..." class="outline-none w-[160px] focus:border-b-2 focus:border-accent placeholder:italic">
+                    </form>
+
+
+                </div>
+            </nav>
+
+            <!-- desktop nav -->
+            <nav class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px]
+                        hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]">
+                <!-- list -->
+                <ul class="flex gap-x-4">
+                    <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Home</a></li>
+                    <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Profissionais</a></li>
+                    <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Especialidades</a></li>
+                    <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Serviços</a></li>
+                    <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Blog</a></li>
+                    <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Contato</a></li>
+                </ul>
+
+                <!-- form -->
+                <form class="relative flex gap-x-[10px]">
+                    <label for="search-input" class="flex justify-center items-center group:">
+                        <i class="ri-search-line text-2xl text-accent"></i>
+                    </label>
+                    <input type="text" id="search-input" placeholder="Buscar..." class="outline-none w-[100px] focus:w-[180px] focus:border-b-2
+                    focus:border-accent placeholder:italic placeholder:text-base transition-all duration-150">
+                </form>
+
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- hero -->
+<section class="hero bg-grey py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+    <div class="container mx-auto h-full">
+        <!-- text & img -->
+        <div class="flex flex-col xl:flex-row items-center justify-between h-full">
+            <!-- text -->
+            <div class="hero__text xl:w-[48%] text-center xl:text-left">
+                <!--badge-->
+                <div class="flex items-center bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0">
+                    <!--badge icon -->
+                    <i class="ri-brain-line text-2xl text-accent"></i>
+                    <i class="ri-psychotherapy-line text-2xl text-accent"></i>
+                    <div class="uppercase text-base font-medium text-[#9ab4b7] tracking-[2.24px]">Viva sua vida</div>
+                </div>
+                <!--title-->
+                <h1 class="h1 mb-6">Nós nos preocupamos com você</h1>
+                <!--desc-->
+                <p class="mb-[42px] md:max-w-xl">Nossos psicólogos e pedagogos altamente qualificados utilizam abordagens inovadoras e personalizadas para atender às necessidades específicas de cada indivíduo, proporcionando suporte emocional, orientação educacional e estratégias eficazes para superar desafios.</p>
+                <!--btn-->
+                <button class="btn btn-lg btn-accent mx-auto xl:mx-0 rounded-full">Agende agora</button>
+            </div>
+            <!-- image -->
+            <div class="hero__img hidden xl:flex max-w-[814px] self-end">
+                <img src="assets/img/hero/img.png" alt="imagem"/>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end hero-->
+
+<!-- stats -->
+<section class="stats section">
+    <div class="container mx-auto">
+        <!-- wrapper -->
+        <div class="flex flex-col xl:flex-row gap-y-6 justify-between">
+            <!-- item-->
+            <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">+5120</div>
+                <div>Pacientes atendidos</div>
+            </div>
+
+            <!-- item-->
+            <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">26</div>
+                <div>Total Filiais</div>
+            </div>
+
+            <!-- item-->
+            <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">+55</div>
+                <div>Profissionais</div>
+            </div>
+
+            <!-- item-->
+            <div class="stats__item flex-1 flex flex-col items-center">
+                <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">+10</div>
+                <div>Anos de Experiência</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- services -->
+<section class="services">
+    <div class="bg-services bg-cover bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[70px] px-6 xl:px-0 relative h-[368px] flex items-center xl:items-start -z-10">
+        <div class="container mx-auto">
+            <!-- Text -->
+            <div class="services__top flex items-center flex-col xl:flex-row xl:mb-[60px]">
+                <h2 class="h2 text-white flex-1 mb-4 xl:mb-0 text-center xl:text-left">Nosso melhor para você</h2>
+                <p class="text-white flex-1 text-center xl:text-left max-w-2xl xl:max-w-none">Com o compromisso de excelência, apresentamos nossos melhores serviços para sua solução. Sua jornada para o bem-estar começa aqui, conosco.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- grid conatainer -->
+    <div class="container mx-auto mt-8 xl:-mt-[144px]">
+        <!-- grid -->
+        <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
+            <div class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                <div class="mb-[15px]">
+                    <img src="assets/icons/services/icon-1.svg" alt="">
+                </div>
+
+                <h3 class="h3 mb-[10px]">Clínicos Gerais</h3>
+                <p class="font-light leading-none max-w-[300px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci.</p>
+            </div>
+
+            <div class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                <div class="mb-[15px]">
+                    <img src="assets/icons/services/icon-2.svg" alt="">
+                </div>
+
+                <h3 class="h3 mb-[10px]">Serviço 2</h3>
+                <p class="font-light leading-none max-w-[300px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci.</p>
+            </div>
+
+            <div class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                <div class="mb-[15px]">
+                    <img src="assets/icons/services/icon-3.svg" alt="">
+                </div>
+
+                <h3 class="h3 mb-[10px]">Serviço 3</h3>
+                <p class="font-light leading-none max-w-[300px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci.</p>
+            </div>
+
+            <div class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                <div class="mb-[15px]">
+                    <img src="assets/icons/services/icon-4.svg" alt="">
+                </div>
+
+                <h3 class="h3 mb-[10px]">Serviço 4</h3>
+                <p class="font-light leading-none max-w-[300px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- appointment -->
+<section class="appointment section">
+    <div class="container mx-auto">
+        <h2 class="appointment__title h2 mb-5 xl:mb-[50px] text-center xl:text-left">Agende uma consulta ou ligue: <span class="text-accent-tertiary">(35) 98404-2996</span></h2>
+
+        <!-- form -->
+        <form class="appointment__form flex flex-col gap-y-5">
+            <div class="flex flex-col xl:flex-row gap-5">
+                <div class="select relative flex items-center">
+                    <div class="absolute right-4">
+                        <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+                    </div>
+
+                    <select class="appearance-none outline-none h-full w-full bg-transparent px-4">
+                        <option value="1">Selecione a especialidade</option>
+                        <option value="2">Selecione a especialidade</option>
+                        <option value="3">Selecione a especialidade</option>
+                        <option value="4">Selecione a especialidade</option>
+                        <option value="5">Selecione a especialidade</option>
+                    </select>
+                </div>
+
+                <div class="select relative flex items-center">
+                    <div class="absolute right-4">
+                        <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+                    </div>
+
+                    <select class="appearance-none outline-none h-full w-full bg-transparent px-4">
+                        <option value="1">Selecione o especialista</option>
+                        <option value="2">Selecione o especialista 2</option>
+                        <option value="3">Selecione o especialista 3</option>
+                        <option value="4">Selecione o especialista 4</option>
+                        <option value="5">Selecione o especialista 5</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col xl:flex-row gap-5">
+                <input type="text" class="input" placeholder="Nome completo">
+                <input type="text" class="input" placeholder="Telefone">
+            </div>
+
+            <div class="flex flex-col xl:flex-row gap-5">
+                <input type="date" class="input">
+                <input type="time" class="input">
+            </div>
+
+            <button class="btn btn-lg btn-accent self-start rounded-full" type="submit">Agendar agora</button>
+        </form>
+    </div>
+</section>
+
+<!-- testimonials -->
+<section class="testimonial bg-testimonials bg-right bg-no-repeat py-12 xl:min-h-[595px] xl:py-0">
+    <div class="testimonial__constainer container mx-auto">
+       <div class="flex flex-col items-center gap-x-14 xl:flex-row">
+           <div class="hidden xl:flex">
+               <img src="assets/img/testimonials/img.png" alt="testimonial">
+           </div>
+
+           <!-- slider swiper -->
+           <div class="max-w-[98%] xl:max-w-[710px]">
+               <!-- Slider main container -->
+               <div class="swiper h-[400px]">
+                   <!-- Additional required wrapper -->
+                   <div class="swiper-wrapper">
+                       <!-- Slides -->
+                       <div class="swiper-slide">
+                           <div class="h-full flex flex-col justify-center items-start">
+                               <div class="max-w-[680px] mx-auto text-center xl:text-left">
+                                   <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left before:bg-quoteLeft
+                                             before:bg-contain before:bg-bottom before:inline-block before:top-0 before:w-10 before:h-10 before:bg-no-repeat
+
+                                             after:bg-quoteRight
+                                             after:bg-contain after:bg-bottom after:inline-block after:top-0 after:w-10 after:h-10 after:bg-no-repeat">
+                                       <span class="mx-2">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aliquam aperiam dolores earum enim eum facere, fuga illo in iusto labore optio praesentium quis sed similique."</span>
+                                   </p>
+                                   <div class="text-[26px] text-[#4c5354] font-semibold">Ana Maria</div>
+                                   <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px] mb-5">Cliente</div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="swiper-slide">
+                           <div class="h-full flex flex-col justify-center items-start">
+                               <div class="max-w-[680px] mx-auto text-center xl:text-left">
+                                   <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left before:bg-quoteLeft
+                                             before:bg-contain before:bg-bottom before:inline-block before:top-0 before:w-10 before:h-10 before:bg-no-repeat
+
+                                             after:bg-quoteRight
+                                             after:bg-contain after:bg-bottom after:inline-block after:top-0 after:w-10 after:h-10 after:bg-no-repeat">
+                                       <span class="mx-2">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aliquam aperiam dolores earum enim eum facere, fuga illo in iusto labore optio praesentium quis sed similique."</span>
+                                   </p>
+                                   <div class="text-[26px] text-[#4c5354] font-semibold">Ana Maria</div>
+                                   <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px] mb-5">Cliente</div>
+                               </div>
+                           </div>
+                       </div>
+
+
+                       <div class="swiper-slide">
+                           <div class="h-full flex flex-col justify-center items-start">
+                               <div class="max-w-[680px] mx-auto text-center xl:text-left">
+                                   <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left before:bg-quoteLeft
+                                             before:bg-contain before:bg-bottom before:inline-block before:top-0 before:w-10 before:h-10 before:bg-no-repeat
+
+                                             after:bg-quoteRight
+                                             after:bg-contain after:bg-bottom after:inline-block after:top-0 after:w-10 after:h-10 after:bg-no-repeat">
+                                       <span class="mx-2">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aliquam aperiam dolores earum enim eum facere, fuga illo in iusto labore optio praesentium quis sed similique."</span>
+                                   </p>
+                                   <div class="text-[26px] text-[#4c5354] font-semibold">Ana Maria</div>
+                                   <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px] mb-5">Cliente</div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- swipper pagination -->
+                   <div class="swiper-pagination"></div>
+
+               </div>
+           </div>
+       </div>
+    </div>
+</section>
+
+<!-- Team -->
+<section class="team section">
+    <div class="container mx-auto">
+        <h2 class="team__title h2 mb-[50px] text-center xl:text-left">Nosso Time</h2>
+    </div>
+</section>
+
+<!-- temp div-->
+<div class="h-[4000px]"></div>
+
+<!--SCRIPTS-->
+<!--SWIPER-->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
