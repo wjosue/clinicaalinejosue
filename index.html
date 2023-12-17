@@ -222,11 +222,15 @@
 
 <!-- appointment -->
 <section class="appointment section">
-    <div class="container mx-auto">
+    <!-- Widget em linha do Calendly - início -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/alinejosuepsicologa?primary_color=2e96f5" style="min-width:320px;height:700px;"></div>
+
+
+    <div class="container mx-auto text-center">
         <h2 class="appointment__title h2 mb-5 xl:mb-[50px] text-center xl:text-left">Agende uma consulta ou ligue: <span class="text-accent-tertiary">(35) 98404-2996</span></h2>
 
         <!-- form -->
-        <form class="appointment__form flex flex-col gap-y-5">
+        <!--<form class="appointment__form flex flex-col gap-y-5">
             <div class="flex flex-col xl:flex-row gap-5">
                 <div class="select relative flex items-center">
                     <div class="absolute right-4">
@@ -268,7 +272,7 @@
                 <input type="time" class="input">
             </div>
 
-            <button class="btn btn-lg btn-accent self-start rounded-full" type="submit">Agendar agora</button>
+            <button class="btn btn-lg btn-accent self-start rounded-full" type="submit">Agendar agora</button>-->
         </form>
     </div>
 </section>
@@ -361,5 +365,6 @@
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/scrollreveal.min.js"></script>
 <script src="js/main.js"></script>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
