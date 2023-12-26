@@ -65,10 +65,10 @@
                     <!-- list -->
                     <ul class="flex flex-col gap-y-5">
                         <li><a href="https://alinejosue.com.br" target="_self" class="text-secondary hover:text-accent transition-all duration-300">Home</a></li>
-                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Profissionais</a></li>
-                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Especialidades</a></li>
-                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Serviços</a></li>
-                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Blog</a></li>
+                        <li><a href="#team" class="text-secondary hover:text-accent transition-all duration-300">Profissionais</a></li>
+                        <!--<li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Especialidades</a></li>-->
+                        <li><a href="#services" class="text-secondary hover:text-accent transition-all duration-300">Serviços</a></li>
+                        <li><a href="#blog" class="text-secondary hover:text-accent transition-all duration-300">Blog</a></li>
                     </ul>
 
                     <!-- form -->
@@ -89,10 +89,10 @@
                 <!-- list -->
                 <ul class="flex gap-x-4">
                     <li><a href="https://alinejosue.com.br" target="_self" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Home</a></li>
-                    <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Profissionais</a></li>
-                    <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Especialidades</a></li>
-                    <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Serviços</a></li>
-                    <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Blog</a></li>
+                    <li><a href="#team" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Profissionais</a></li>
+                    <!--<li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Especialidades</a></li>-->
+                    <li><a href="#services" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Serviços</a></li>
+                    <li><a href="#blog" class="text-secondary hover:text-accent transition-all duration-300">Blog</a></li>
                     <!--<li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Contato</a></li>-->
                 </ul>
 
@@ -178,7 +178,7 @@
 </section>-->
 
 <!-- services -->
-<section class="services mt-8">
+<section class="services mt-8" id="services">
     <div class="bg-services bg-cover bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[70px] px-6 xl:px-0 relative h-[368px] flex items-center xl:items-start -z-10">
         <div class="container mx-auto">
             <!-- Text -->
@@ -369,7 +369,7 @@
 </section>-->
 
 <!-- Team -->
-<section class="team section ">
+<section class="team section" id="team">
     <div class="container mx-auto ">
        <!-- <h2 class="team__title h2 mb-[50px] text-center xl:text-left">Nosso Time</h2>-->
         <!-- slider swiper -->
@@ -520,7 +520,7 @@
 </section>-->
 
 <!-- blog -->
-<section class="blog">
+<section class="blog" id="blog">
     <div class="container mx-auto">
         <h2 class="blog__title h2 mb-[50px] text-center xl:text-left">Nossos posts recentes</h2>
         <!-- blog posts-->
@@ -675,19 +675,19 @@
                 </div>
             </div>
             <!-- footer quick links section -->
-            <div class="footer__item flex-1">
+            <!--<div class="footer__item flex-1">
                 <h4 class="h4 mb-5">Links Rápidos</h4>
                 <div class="flex gap-x-5">
-                    <!-- List 1 -->
+                    &lt;!&ndash; List 1 &ndash;&gt;
                     <ul class="flex flex-1 flex-col gap-y-5 ">
                         <li><a href="#" class="hover:text-accent transition-all">Home</a></li>
                         <li><a href="#" class="hover:text-accent transition-all">Profissionais</a></li>
-                        <li><a href="#" class="hover:text-accent transition-all">Especialidades</a></li>
+                        &lt;!&ndash;<li><a href="#" class="hover:text-accent transition-all">Especialidades</a></li>&ndash;&gt;
                         <li><a href="#" class="hover:text-accent transition-all">Serviços</a></li>
                         <li><a href="#" class="hover:text-accent transition-all">Blog</a></li>
                     </ul>
 
-                    <!-- List 2 -->
+                    &lt;!&ndash; List 2 &ndash;&gt;
                     <ul class="flex flex-1 flex-col gap-y-5 ">
                         <li><a href="#" class="hover:text-accent transition-all">Nossos Preços</a></li>
                         <li><a href="#" class="hover:text-accent transition-all">Contato</a></li>
@@ -696,7 +696,7 @@
                         <li><a href="#" class="hover:text-accent transition-all">Politica de Privacidade</a></li>
                     </ul>
                 </div>
-            </div>
+            </div>-->
             <!--footer horário de funcionamento -->
             <div class="footer__item flex-1">
                 <h4 class="h4 mb-5">Horários de atendimento</h4>
@@ -712,9 +712,15 @@
                             <div class="text-accent font-medium">08:00 - 12:00</div>
                         </div>
 
-                        <div class="flex justify-between items-center border-b pb-[10px]">
-                            <div>Após os horários acima</div>
-                            <div class="text-red-600 font-medium">Somente emergências (online)</div>
+                        <div class="flex items-center border-b pb-[10px]">
+                                <div class="text-secondary">
+                                    <a href="https://wa.me/5535984042996?text=Olá Aline! Gostaria de agendar minha sessão" target="_blank">
+                                        <i class="ri-whatsapp-fill text-[24px] text-accent"></i>
+                                        Após os horários acima entre em contato
+
+                                        (35) 98404-2996
+                                    </a>
+                                </div>
                         </div>
                     </div>
                 </div>
