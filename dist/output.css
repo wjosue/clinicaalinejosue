@@ -1823,6 +1823,14 @@ btn {
     padding-top: 80px;
   }
 
+  .xl\:pt-\[200px\] {
+    padding-top: 200px;
+  }
+
+  .xl\:pt-\[20px\] {
+    padding-top: 20px;
+  }
+
   .xl\:text-left {
     text-align: left;
   }
