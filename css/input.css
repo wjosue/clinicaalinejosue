@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h4 {
-    @apply text-[20px] xl:text-[26px] font-semibold capitalize;
+    @apply text-[20px] xl:text-[26px] font-semibold;
 }
 
 btn {
