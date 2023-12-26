@@ -59,7 +59,7 @@ btn {
 }
 
 .section{
-    @apply py-12 xl:py-[150px];
+    @apply py-6 xl:py-[40px];
 }
 
 /* swiper bullets*/
