@@ -713,6 +713,10 @@ video {
   margin-left: 20rem;
 }
 
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -973,6 +977,11 @@ video {
   row-gap: 30px;
 }
 
+.gap-x-\[16px\] {
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
 .self-start {
   align-self: flex-start;
 }
@@ -1058,6 +1067,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-pink-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
 }
 
 .bg-departments {
