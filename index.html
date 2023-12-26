@@ -33,11 +33,19 @@
             </div>-->
             <!-- phone-->
             <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
-                <i class="ri-whatsapp-fill text-2xl text-accent"></i>
-                <div class="text-secondary">(35) 98404-2996</div>
+                <div class="text-secondary">
+                    <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0 rounded-full">
+                        <a href="https://wa.me/5535984042996?text=Olá Aline! Gostaria de agendar minha sessão" target="_blank">
+                            <i class="ri-whatsapp-line"> </i>
+                            (35) 98404-2996
+                        </a>
+                    </button>
+                </div>
             </div>
             <!-- btn-->
-            <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0 rounded-full">Agende agora</button>
+            <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0 rounded-full">
+                <a href="#agendamento"> <i class="ri-calendar-schedule-line"></i> Agende agora</a>
+            </button>
 
             <!-- mobile nav -->
             <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20">
@@ -118,11 +126,14 @@
                     <div class="uppercase text-base font-medium text-[#9ab4b7] tracking-[2.24px]">Viva sua vida</div>
                 </div>
                 <!--title-->
-                <h1 class="h1 mb-6">Nós nos preocupamos com você</h1>
+                <h1 class="h1 mb-6">Nós nos preocupamos com você!</h1>
                 <!--desc-->
-                <p class="mb-[42px] md:max-w-xl">Nossos psicólogos e pedagogos altamente qualificados utilizam abordagens inovadoras e personalizadas para atender às necessidades específicas de cada indivíduo, proporcionando suporte emocional, orientação educacional e estratégias eficazes para superar desafios.</p>
+                <p class="mb-[42px] md:max-w-xl">
+                    Bem-vindo(a) ao meu espaço dedicado ao bem-estar e à saúde mental! Aqui, você encontra uma fonte de apoio, inspiração e recursos para cuidar da sua mente e da sua vida.
+                    Como psicóloga e pedagoga, minha missão é ajudá-lo(a) a descobrir caminhos para uma vida mais equilibrada, feliz e significativa. Lembre-se, a jornada para o bem-estar começa com o primeiro passo, e estou aqui para guiá-lo(a) nessa jornada. Seja bem-vindo(a) e vamos caminhar juntos em direção a uma vida mais plena!
+                </p>
                 <!--btn-->
-                <button class="btn btn-lg btn-accent mx-auto xl:mx-0 rounded-full">Agende agora</button>
+                <button class="btn btn-lg btn-accent mx-auto xl:mx-0 rounded-full mb-10">Agende agora</button>
             </div>
             <!-- image -->
             <div class="hero__img hidden xl:flex max-w-[814px] self-end">
@@ -224,7 +235,7 @@
 <section class="appointment section">
 
     <div class="container mx-auto bg-testimonials py-12">
-        <h2 class="appointment__title h2 mb-2 xl:mb-[2px] text-center xl:text-center">Ligue: <span class="text-accent-tertiary">(35) 98404-2996</span> ou realize seu autoagendamento </h2>
+        <h2 id="agendamento" class="appointment__title h2 mb-2 xl:mb-[2px] text-center xl:text-center">Ligue: <span class="text-accent-tertiary">(35) 98404-2996</span> ou realize seu autoagendamento </h2>
 
         <!-- form -->
         <!--<form class="appointment__form flex flex-col gap-y-5">
